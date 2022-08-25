@@ -269,9 +269,24 @@ img {
   padding-bottom: 200px;
 }
 
-.hero-container {
+/* .hero-container {
   margin-left: auto;
   margin-right: auto;
+} */
+
+/* TODO: Do we need height? */
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid teal;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/studio/hero-bg.jpg');
+  /* background-image: url('../images/studio/hero-bg.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -312,11 +327,47 @@ img {
   line-height: 1.7;
 }
 
-.adv .item {
+.adv-item {
   width: 270px;
 }
 
-.adv .item:not(:last-child) {
+.adv-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--bg-color-light);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.adv-item.icon-antenna::before {
+  background-image: url('../images/studio/antenna\ 1.svg');
+}
+
+.adv-item.icon-clock::before {
+  background-image: url('../images/studio/clock\ 1.svg');
+}
+
+.adv-item.icon-diagram::before {
+  background-image: url('../images/studio/diagram\ 1.svg');
+}
+
+.adv-item.icon-astronaut::before {
+  background-image: url('../images/studio/astronaut\ 1.svg');
+}
+
+/* .advantages .item:last-child::before {
+  margin-right: 0px;
+} */
+
+.adv-item:hover::before {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.adv-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -357,6 +408,9 @@ img {
 .team-list .item {
   background-color: var(--accent-color);
   border-radius: 0 0 4px 4px;
+  margin-bottom: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-description {
@@ -391,6 +445,23 @@ img {
   line-height: 1.18;
 }
 
+/* Regular Customers section */
+
+/* TODO: margins */
+.regular-customers-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  color: var(--text-secondary);
+}
+
+.regular-customers-list {
+  display: flex;
+}
+
 /* STUDIO PAGE MAIN end*/
 
 /* PORTFOLIO PAGE */
@@ -399,6 +470,10 @@ img {
   justify-content: center;
 
   margin-bottom: 50px;
+}
+
+.radio .item {
+  margin-bottom: 0;
 }
 
 .radio .item:not(:last-child) {
@@ -456,6 +531,7 @@ img {
 /* Footer */
 
 .logo-footer {
+  display: inline-block;
   margin-bottom: 20px;
 }
 .logo-spn {
@@ -499,4 +575,20 @@ img {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--brand-color);
+}
+
+.icon-insta {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  background-image: url(../images/svg/instagram\ 2.svg);
+  background-color: #43444d;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.icon-insta:hover {
+  background-color: var(--brand-color);
 }
