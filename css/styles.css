@@ -87,7 +87,7 @@ img {
   text-decoration: none;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -98,7 +98,7 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
 
 /* Buttons */
 
@@ -407,6 +407,7 @@ img {
 
 .team-list .item {
   background-color: var(--accent-color);
+  /* background-color: orange; */
   border-radius: 0 0 4px 4px;
   margin-bottom: 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -577,7 +578,7 @@ img {
   color: var(--brand-color);
 }
 
-.icon-insta {
+/* .icon-insta {
   display: inline-block;
   height: 44px;
   width: 44px;
@@ -590,5 +591,41 @@ img {
 }
 
 .icon-insta:hover {
+  background-color: var(--brand-color);
+} */
+
+.actions {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid red;
+  list-style: none;
+}
+
+/* TODO: change buttons to links */
+/* TODO: ALL icons in SVG sprite */
+.link-social {
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-color);
+  /* background-color: #43444d; */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+}
+.social-icon {
+  /* display: inline-block; */
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-icon:hover {
+  /* background-color: var(--brand-color); */
+  fill: var(--accent-color);
+}
+
+.link-social:hover {
   background-color: var(--brand-color);
 }
