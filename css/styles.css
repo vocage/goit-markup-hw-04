@@ -73,12 +73,15 @@ img {
   margin: 0;
 }
 
-/* WHY? */
 .nolist li {
-  /* margin-bottom: 9px; */
+  margin-bottom: 9px;
 }
 
 .nolist li:last-child {
+  margin-bottom: 0px;
+}
+
+.site-nav-contacts .item {
   margin-bottom: 0px;
 }
 
