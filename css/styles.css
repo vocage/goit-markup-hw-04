@@ -393,8 +393,9 @@ img {
 
 .team-member-description {
   margin: 0;
+  /* margin-bottom: 32px; */
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -419,6 +420,7 @@ img {
 }
 
 .team-role {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -432,7 +434,7 @@ img {
 
   padding: 0;
   list-style: none;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
 }
 
 .social-link {
